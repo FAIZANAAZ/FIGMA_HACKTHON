@@ -9,7 +9,15 @@ export const roboto = Roboto({
 
 
 
+  // import { Satoshi } from 'next/font/google';
 
+  // export const satoshi = Satoshi({
+  //     subsets: ['latin'], // Include Latin characters
+  //     weight: ['400', '700'], // Specify font weights (e.g., normal and bold)
+  //     style: ['normal', 'italic'], // Optional: normal and italic styles
+  //     variable: '--font-satoshi', // Custom CSS variable for this font
+  // });
+  
 
 
 
