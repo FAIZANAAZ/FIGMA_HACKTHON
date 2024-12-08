@@ -1,4 +1,4 @@
-import ProductDetail from '@/components/revews/details'
+
 import ReviewsSection from '@/components/revews/reviews'
 import Detailcards from '@/components/revews/reviwscards'
 import React from 'react'
