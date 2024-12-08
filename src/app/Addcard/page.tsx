@@ -65,7 +65,7 @@ export default function ShoppingCart() {
   }
 
   return (
-    <div className="mx-auto max-w-[1340px] px-[100px] py-8">
+    <div className="mx-auto max-w-[1340px] px-[16px] md:px-[100px] py-8">
       <h1 className="text-2xl font-bold mb-8">YOUR CART</h1>
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Cart Items */}

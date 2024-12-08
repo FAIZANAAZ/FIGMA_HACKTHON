@@ -1,8 +1,6 @@
 'use client'
 
-import Image from "next/image"
-import { useState } from "react"
-import { Slider } from "@/components/ui/slider"
+
 import Card from "../cards"
 
 
@@ -27,7 +25,7 @@ export default function ProductFilterColor() {
             </select>
           </div>
      
-        <div className=" w-full h-fit grid grid-cols-3 items-center  md:mx-[100px] gap-4 md:gap-x-[20px] md:gap-y-[150px] md:mt-10">
+        <div className=" w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1fr]    md:gap-x-[20px] md:gap-y-[150px] md:mt-10">
           {/* card1 */}
           <Card
           imageUrl="/l3.png"

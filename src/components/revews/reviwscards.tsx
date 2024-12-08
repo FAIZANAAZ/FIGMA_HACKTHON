@@ -5,12 +5,12 @@ export default function Detailcards
 () {
   return (
     <>
-    <div className="bg-white flex items-center flex-col justify-center object-cover mb-[180px]">
+    <div className="bg-white flex items-center flex-col justify-center object-cover md:mb-[180px]">
         
-      <h1 className=" pt-5 font-integral text-[48px] font-bold leading-[57.6px]">
+      <h1 className=" md:pt-5 font-integral md:text-[48px] font-bold leading-[57.6px]">
       You might also like
       </h1>
-      <div className=" w-full h-fit flex items-center justify-between md:mx-[100px] gap-4 md:gap-8 md:mt-10">
+      <div className=" w-full h-fit flex flex-col md:flex-row items-center justify-between md:mx-[100px] gap-4 md:gap-8 md:mt-10">
         {/* card1 */}
         <Card
           imageUrl="/l4.png"

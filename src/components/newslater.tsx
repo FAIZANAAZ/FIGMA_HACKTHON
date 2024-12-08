@@ -1,34 +1,32 @@
-
 import { TfiEmail } from "react-icons/tfi";
 export default function NewsLetter() {
   return (
     <>
-      <div className=" w-[435px] h-auto md:w-[1240px] md:h-[180px] flex items-center justify-between gap-4 flex-col md:flex-row ml-8 md:ml-[100px] rounded-[20px] bg-black py-9 px-16 ">
-
+      <div className="w-full md:w-[1240px] h-auto md:h-[180px] flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 ml-4 md:ml-[100px] rounded-[20px] bg-black py-6 md:py-9 px-6 md:px-16">
         {/* left div */}
-        <div className=" flex-1 text-[40px] font-bold leading-[45px] text-white font-integral text-wrap   ">
-          STAY UPTO DATE ABOUT OUR LATEST OFFERS{" "}
+        <div className="flex-1 text-[24px] md:text-[40px] font-bold leading-[30px] md:leading-[45px] text-white font-integral text-center md:text-left">
+          STAY UPTO DATE ABOUT OUR LATEST OFFERS
         </div>
 
-        {/* right div  */}
-        <div className=" flex-1 w-[349px] h-[108px] flex flex-col items-center justify-center gap-[14px]">
-          <div className="  relative w-[349px] h-[46px] rounded-[62px] overflow-x-hidden-hidden py-2 px-4 bg-white">
-            <span className="absolute inset-y-0 left-5 top-1 flex items-center pl-3 text-[#00000066]">
+        {/* right div */}
+        <div className="flex-1 w-full md:w-[349px] h-auto md:h-[108px] flex flex-col items-center justify-center gap-4">
+          <div className="relative w-full md:w-[349px] h-[46px] rounded-[62px] bg-white py-2 px-4">
+            <span className="absolute inset-y-0 left-4 flex items-center text-[#00000066]">
               <TfiEmail />
             </span>
             <input
               type="email"
-              className="pl-10 pr-4 py-1  rounded-md border-none"
+              className="w-full pl-10 pr-4 py-1 rounded-md border-none text-sm"
               placeholder="Enter your email"
             />
           </div>
 
-          <div className="w-[349px] h-[46px] flex-1  flex items center justify-center rounded-[62px] py-3 px-4 bg-white">
-            <button className="text-[#000000]"><span>Subscribe to Newsletter</span></button>
+          <div className="w-full md:w-[349px] h-[46px] flex items-center justify-center rounded-[62px] bg-white">
+            <button className="text-[#000000] font-semibold text-sm">
+              Subscribe to Newsletter
+            </button>
           </div>
         </div>
-
-
       </div>
     </>
   );

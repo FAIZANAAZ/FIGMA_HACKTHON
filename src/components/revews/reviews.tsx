@@ -58,10 +58,10 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold">All Reviews</h2>
+            <h2 className="md:text-2xl text-1xl font-bold">All Reviews</h2>
             <span className="text-base text-muted-foreground">(451)</span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
             <Button variant="outline" size="icon" className="hidden md:flex">
               <LayoutGrid className="h-4 w-4" />
             </Button>

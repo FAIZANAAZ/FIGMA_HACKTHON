@@ -5,7 +5,7 @@ import React from 'react'
 
 const Filters = () => {
   return (
-    <div className='flex px-[100px] md:flex-row flex-col'>
+    <div className='  md:px-[100px]  grid md:grid-cols-[1fr_2fr] grid-cols-[1fr]'>
 <FiltersSidebar/>
 <ProductFilterColor/>
     </div>

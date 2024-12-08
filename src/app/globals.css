@@ -4,12 +4,22 @@
 @layer base {
 
 body{
-  width: 1440px;
+  width: 100%;
+  max-width: 90rem;
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  
  
 }
+
+@media screen and (max-width: 600px) {
+  .abcs{
+    order: 1; /* Change the order for small screens */
+  }
+}
+
 
   :root {
     --background: 0 0% 100%;

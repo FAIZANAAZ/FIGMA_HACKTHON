@@ -17,7 +17,7 @@ export default function ProductDetail() {
   return (
     <div className="max-w-[1440px] mx-auto px-6 py-8">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-4 mb-8 text-base">
+      <nav className="md:flex hidden  items-center gap-4 mb-8 text-base">
         <Link href="/" className="text-muted-foreground hover:text-black">Home</Link>
         <ChevronRight className="w-4 h-4 text-muted-foreground" />
         <Link href="#!" className="text-muted-foreground hover:text-black">Shop</Link>
@@ -27,10 +27,10 @@ export default function ProductDetail() {
         <span className="text-black">T-shirts</span>
       </nav>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
         {/* Image Gallery */}
-        <div className="flex gap-6">
-          <div className="flex flex-col gap-4">
+        <div className="flex gap-6 flex-col md:flex-row ">
+          <div className=" abcs flex flex-col items-center gap-4 ">
            
               <div  className="w-20 h-20 border rounded-lg overflow-hidden">
                 <Image
@@ -77,7 +77,7 @@ export default function ProductDetail() {
         {/* Product Info */}
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-3xl font-bold">ONE LIFE GRAPHIC T-SHIRT</h1>
+            <h1 className="md:text-3xl font-bold">ONE LIFE GRAPHIC T-SHIRT</h1>
             <div className="flex items-center gap-2">
               {[1, 2, 3, 4].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-[#FFC633] text-[#FFC633]" />
@@ -93,7 +93,7 @@ export default function ProductDetail() {
           </div>
 
           {/* Color Selection */}
-          <div className="space-y-4">
+          <div className="space-y-4  md:flex-row items-center ">
             <span className="text-sm font-medium">Select Color</span>
             <div className="flex gap-3">
               {colors.map((color) => (
@@ -129,7 +129,7 @@ export default function ProductDetail() {
           </div>
 
           {/* Quantity and Add to Cart */}
-          <div className="flex items-center gap-6">
+          <div className="flex  flex-col  md:flex-row items-start gap-6">
             <div className="flex items-center border rounded-md">
               <Button
                 variant="ghost"

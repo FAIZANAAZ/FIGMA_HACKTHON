@@ -6,7 +6,7 @@ import React from 'react'
 const Review = () => {
   return (
     <div>
-     <div className='px-[100px] '>
+     <div className='md:px-[100px]  '>
      <ProductDetail/>
      <ReviewsSection/>
      <Detailcards/>
