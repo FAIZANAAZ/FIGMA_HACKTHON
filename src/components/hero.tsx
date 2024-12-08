@@ -31,14 +31,14 @@ export default function Hero() {
                     alt={"star image"}
                     width={56}
                     height={56}
-                    className="hidden md:flex absolute left-10 sm:top-[200px]  "
+                    className="hidden md:flex absolute lg:left-10 md:right-10 sm:top-[200px]  "
                 />
                 <Image
                     src={"/star.png"}
                     alt={"star image"}
                     width={104}
                     height={104}
-                    className="absolute hidden  md:flex top-[20px] sm:top-[27px] md:top-[50px] lg:top-[75px] xl:top-[100px] right-3 sm:right-5"
+                    className="absolute hidden  md:flex top-[20px] sm:top-[27px] md:top-[35px] lg:top-[75px] xl:top-[100px] right-3 sm:right-5"
                 />
             </div>
         </section>
