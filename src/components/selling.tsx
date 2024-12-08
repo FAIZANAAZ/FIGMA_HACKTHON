@@ -1,10 +1,11 @@
 
+import Link from "next/link";
 import Card from "./cards";
 
 export default function Selling() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center  md:mt-[100px]    object-cover mb-5">
+      <div id="selles" className="flex flex-col items-center justify-center  md:mt-[100px]    object-cover mb-5">
          <h1
           className=" pt-5 font-integral text-[30px] md:text-[48px] font-bold leading-[57.6px] decoration-from-font
 "
@@ -20,8 +21,7 @@ export default function Selling() {
             stars="/s5.png"
             ranking="4.5/5"
             price={100}
-            className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px]"
-          />
+            className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px]" id={5}          />
           {/* card2 */}
           <Card
             imageUrl="/p6.png"
@@ -29,8 +29,7 @@ export default function Selling() {
             stars="/s6.png"
             ranking="4.5/5"
             price={145}
-            className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px]"
-          />
+            className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px]" id={6}          />
 
           {/* card3 */}
           <Card
@@ -39,8 +38,7 @@ export default function Selling() {
             stars="/s7.png"
             ranking="4.5/5"
             price={80}
-            className=" md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]"
-          />
+            className=" md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]" id={7}          />
 
           {/* card4 */}
           <Card
@@ -49,13 +47,13 @@ export default function Selling() {
             stars="/s8.png"
             ranking="4.5/5"
             price={210}
-            className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]"
-          />
+            className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]" id={8}          />
          </div>
-
+         <Link href={"/Filter"}>
          <button className="w-[358px] h-[46px] md:w-[295px] md:h-[52px] rounded-[62px] py-4 px-[54px] md:rounded-[20px] m-5 md:mt-36  hover:bg-gray-200 flex items-center justify-center">
           View All
          </button>
+         </Link>
      </div>
     </>
   );

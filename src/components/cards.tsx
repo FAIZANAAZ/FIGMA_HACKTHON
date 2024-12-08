@@ -1,5 +1,6 @@
 
 
+import Link from "next/link";
 import Image from "next/image";
 interface CardProps{
     imageUrl:string;
@@ -8,10 +9,13 @@ interface CardProps{
     ranking:string;
     price:number;
     className:string
+
+    id:number
 }
- const Card:React.FC<CardProps> =({imageUrl,h1,stars,price,className})=>{
+ const Card:React.FC<CardProps> =({imageUrl,h1,stars,price,className,id})=>{
 return(
-    <div className={`w-[296px] h-[444px] ml-[-1px] flex flex-col gap-5 ${className} bg-white`}>
+<Link href={`/Product/${id}`}>  
+  <div key={id} className={`w-[296px] h-[444px] ml-[-1px] flex flex-col gap-5 ${className} bg-white`}>
         <div className="flex flex-col gap-3 hover:transition-transform items-center md:text-start hover:scale-105">
             <Image
              src={imageUrl} 
@@ -30,7 +34,7 @@ return(
             <h2 className="text-2xl leading-[32.4px] text-black"> $ {price}</h2>
 
         </div>
-    </div>
+    </div></Link>
 )
  }
 

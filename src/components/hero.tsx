@@ -22,8 +22,8 @@ export default function Hero() {
                     src={'/hero-background.jpeg'}
                     alt="hero image"
                     fill
-                    objectFit="cover "
-                    className="absolute top-0 left-0 h-[500px] w-[200px] md:object-cover "
+                    objectFit="contain "
+                    className="absolute top-0 left-0 h-[600px] w-[200px] md:object-cover  "
                     
                 />
                 <Image
@@ -31,7 +31,7 @@ export default function Hero() {
                     alt={"star image"}
                     width={56}
                     height={56}
-                    className="hidden md:flex absolute top-[150px] sm:top-[200px] md:top-[250px] lg:top-[300px] xl:top-[331px] left-[30px] sm:left-[40px] md:left-[27px]"
+                    className="hidden md:flex absolute left-10 sm:top-[200px]  "
                 />
                 <Image
                     src={"/star.png"}

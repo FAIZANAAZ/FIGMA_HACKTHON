@@ -84,19 +84,19 @@ export default function Header() {
                     Shop
                   </Link>
                   <Link
-                    href="/"
+                    href={"#selles"}
                     className="text-lg hover:underline"
                   >
                     On Sale
                   </Link>
                   <Link
-                    href="/"
+                    href={"#newarivalss"}
                     className="text-lg hover:underline"
                   >
                     New Arrivals
                   </Link>
                   <Link
-                    href="/"
+                    href={"#drassstyless"}
                     className="text-lg hover:underline"
                   >
                     Brands
@@ -125,17 +125,17 @@ export default function Header() {
                   <IoIosArrowDown className="ml-1" />
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-gray-600">
+                  <Link href="#selles" className="hover:text-gray-600">
                     On Sale
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-gray-600">
+                  <Link href="#newarivalss" className="hover:text-gray-600">
                     New Arrivals
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-gray-600">
+                  <Link href="#drassstyless" className="hover:text-gray-600">
                     Brands
                   </Link>
                 </li>
@@ -165,7 +165,7 @@ export default function Header() {
                 size="icon"
                 aria-label="Cart"
               >
-                <FiShoppingCart className="w-5 h-5" />
+               <Link href={"/Addcard"}> <FiShoppingCart className="w-5 h-5" /></Link>
               </Button>
               <Button
                 variant="ghost"

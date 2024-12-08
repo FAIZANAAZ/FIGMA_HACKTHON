@@ -7,7 +7,6 @@ const Review = () => {
   return (
     <div>
      <div className='md:px-[100px]  '>
-     <ProductDetail/>
      <ReviewsSection/>
      <Detailcards/>
      </div>
