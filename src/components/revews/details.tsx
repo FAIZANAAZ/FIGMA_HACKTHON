@@ -126,6 +126,7 @@ export default function ProductDetail({ cardid }: { cardid: number }) {
                   <Button
                     variant="ghost"
                     size="icon"
+                    // math.max mean 1 sy oper na jay sbsy bara 1 he
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                     className="h-12 w-12 bg-"
                   >

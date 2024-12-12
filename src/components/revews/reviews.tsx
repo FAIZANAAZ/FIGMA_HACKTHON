@@ -70,7 +70,7 @@ export default function ReviewsSection() {
             </Button>
             <Popover>
               <PopoverTrigger asChild>
-                <Button variant="outline" className="w-[120px] justify-between">
+                <Button variant="outline" className="w-[130px] justify-between">
                   {sortBy === 'latest' ? 'Latest' : sortBy === 'highest' ? 'Highest Rated' : 'Lowest Rated'}
                   <ChevronDown className="h-4 w-4 opacity-50" />
                 </Button>

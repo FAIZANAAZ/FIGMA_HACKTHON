@@ -10,7 +10,7 @@ interface ReviewCardProps {
   isVerified?: boolean
 }
 
-export function ReviewCard({ name, rating, date, content, isVerified = false }: ReviewCardProps) {
+export function ReviewCard({ name, rating, date, content }: ReviewCardProps) {
   return (
     <Card className="w-full">
       <CardContent className="p-7">
@@ -29,9 +29,9 @@ export function ReviewCard({ name, rating, date, content, isVerified = false }: 
               </div>
               <div className="flex items-center gap-1">
                 <span className="font-bold text-xl">{name}</span>
-                {isVerified && (
+               
                   <CheckCircle2 className="w-6 h-6 text-[#01AB31]" />
-                )}
+                
               </div>
             </div>
             <Button variant="ghost" size="icon" className="h-8 w-8">

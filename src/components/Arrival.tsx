@@ -35,7 +35,7 @@ export default function Arrivals() {
             stars="/s3.png"
             ranking="4.5/5"
             price={180}
-            className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]" id={3}        />
+            className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]" id={3}    />
 
         {/* card4 (hidden on mobile, shown on md and up) */}
         <Card

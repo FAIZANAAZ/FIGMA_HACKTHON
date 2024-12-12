@@ -46,23 +46,41 @@ export default function ShoppingCart() {
       quantity: 1,
     },
   ])
+// ye sb functionality chal rhi he quenty ke oper
 
+
+  // reduce ye kryga ke sbsy phly oski value  acc 0 hogi kioky hmnny 0 diya he wo jiny itremske price hongy osko +kryga
+  // phir multiplay kryga quentity sy ke kitny orders hen
   const subtotal = items.reduce((acc, item) => acc + item.price * item.quantity, 0)
+
+  // yha hm multiplay kry hen yani jb jb quanty brhy gi or subtotal me save hogi to wo os hisab sy multiplay ho jay
+  // yani 2 shirt hoi to discout zada hoga 1 hoi to km 
   const discount = subtotal * 0.2
+
+  //ismy hm delivery rakh rhy hn 
   const deliveryFee = 15
+
+  // ye + - ke bad hm total kry hen
   const total = subtotal - discount + deliveryFee
 
+// ismy hm ye kry ke kb kb quenty brhy
   const updateQuantity = (id: number, delta: number) => {
     setItems(items.map(item => 
       item.id === id 
         ? { ...item, quantity: Math.max(1, item.quantity + delta) }
+        // 1 ka matlb ak ha 1 hona lazmi he phly sy or by default hmny nichy argument me kha he ke delta 1 hoga yani 1 hi ayga wo har br
+        //or items me click hony pr wo id aygi jo map me chali hogi wo dono ko cheq kryga or jisy ye dono match hongi oski brha dega quatity yani map wha sy phly id layga or yha bhi map ye or map to har item pr jata he
+        // wo har item ki id match kry
+
         : item
     ))
   }
-
+// ismy hm delete kry hn quenty ko
   const removeItem = (id: number) => {
+    // filter ye kra he ke hmny kha he ke agr item.id !== id id jo ai he wo or item.id agr == nhi he hen rakhlo or braber he to htado filter krdo osko 
     setItems(items.filter(item => item.id !== id))
   }
+
 
   return (
     <div className="mx-auto max-w-[1340px] px-[16px] md:px-[100px] py-8">
@@ -105,6 +123,7 @@ export default function ShoppingCart() {
                           variant="ghost"
                           size="icon"
                           onClick={() => updateQuantity(item.id, -1)}
+                          // -1 kaa matlb ak hi km ho zada nhi
                           className="h-5 w-5 p-0"
                         >
                           <Minus className="h-5 w-5" />

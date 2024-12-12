@@ -101,6 +101,12 @@ export default function Header() {
                   >
                     Brands
                   </Link>
+                  <Link
+                    href={"/Product"}
+                    className="text-lg hover:underline"
+                  >
+                   Our Products
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
@@ -137,6 +143,11 @@ export default function Header() {
                 <li>
                   <Link href="#drassstyless" className="hover:text-gray-600">
                     Brands
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/Product" className="hover:text-gray-600">
+                    Our Products
                   </Link>
                 </li>
               </ul>
