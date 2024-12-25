@@ -38,6 +38,8 @@ export default function Detailcards
             className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]" id={10}        />
 
         {/* card4 (hidden on mobile, shown on md and up) */}
+
+        
         <Card
             imageUrl="/l1.png"
             h1="Black Striped T-shirt"
